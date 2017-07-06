@@ -317,7 +317,7 @@ function create(settings) {
     function searchPrompt(session) {
         var prompt = 'Where do you want me to search POIs at?\n';
         prompt += '(The following fields are Searchable : Streetname, City, District, State, Country, Neighborhood, geohash and neighboring geohashes.)\n';
-        prompt += ' Here goes your query : \"POIs in ......\" ';
+        prompt += ' For example, start by typing "Manila" in chat window';
         if (session.dialogData.firstTimeDone) {
             prompt = 'Where else would you like to search POIs at?';
             if (settings.multipleSelection) {
