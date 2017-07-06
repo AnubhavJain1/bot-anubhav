@@ -30,7 +30,7 @@ var bot = new builder.UniversalBot(connector, [
     function (session, args) {
         // Process selected search results
         session.send(
-            'Done! For future reference, you selected these properties: %s',
+            'Done! For future reference, you selected these POIs: %s',
             args.selection.map(function (i) { return i.key; }).join(', '));
     }
 ]);
