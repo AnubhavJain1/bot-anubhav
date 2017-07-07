@@ -98,8 +98,8 @@ function create(settings) {
                 session.send(reply);
 
                 session.send(settings.multipleSelection ?
-                    'You can select one or more to add to your list, *list* what you\'ve selected so far, *refine* these results, see *more* or search *again*.' :
-                    'You can select one, *refine* these results, see *more* or search *again*.');
+                    'You can select one or more to add to your list, \"*list*\" what you\'ve selected so far, \"*refine*\" these results, see \"*more*\" or search \"*again*\".' :
+                    'You can select one, \"*refine*\" these results, see \"*more*\" or search \"*again*\".');
 
             })
             .matches(/again|reset|restart|start over/i, (session) => {
