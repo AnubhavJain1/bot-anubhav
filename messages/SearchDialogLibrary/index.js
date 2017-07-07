@@ -130,7 +130,7 @@ function create(settings) {
                 var hit = _.find(session.dialogData.searchResponse.results, ['key', selectedKey]);
                 if (!hit) {
                     // Un-recognized selection
-                    return session.send('Not sure what you mean. You can search *again*, *refine*, *list* or select one of the items above. Or are you *done*?');
+                    return session.send('Not sure what you mean. You can search \"*again*\", \"*refine*\", \"*list*\" or select one of the items above. Or are you \"*done*\"?');
                 } else {
                     // Add selection
                     var selection = session.dialogData.selection || [];
@@ -321,7 +321,7 @@ function create(settings) {
         if (session.dialogData.firstTimeDone) {
             prompt = 'Where else would you like to search POIs at?';
             if (settings.multipleSelection) {
-                prompt += ' You can also *list* all items you\'ve added so far.';
+                prompt += ' You can also \"*list*\" all items you\'ve added so far.';
             }
         }
 
